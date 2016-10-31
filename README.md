@@ -1,6 +1,6 @@
-# with-react
+# with-angular
 
-Ryan Sobol's React skeleton for Brunch
+Ken McGrady's Angular 1.x (using ES6) skeleton for Brunch
 
 ## Dependencies
 
@@ -12,7 +12,7 @@ npm install -g brunch
 
 ## Usage
 
-Create a new React application based on this Brunch skeleton and install its dependencies.
+Create a new Angular 1.5 application (with ES6) based on this Brunch skeleton and install its dependencies.
 
 ```shell
 brunch new path/to/app --skeleton kmcgrady/with-angular
@@ -27,27 +27,23 @@ la app
 Static files are placed in the `app/assets` directory and are copied to the `public` directory on build.
 
 ```shell
-la app/assets
+ls -la app/assets
 ```
 
-React components are placed in the `app/components` directory and are combined into the `public/app.js` file on build.
+JS scripts in the `app` directory and are combined into the `public/app.js` file on build.
 
-**NOTE:** Each React component lives in a module so can be shared with other modules using [ES6 module](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/) syntax.
-
-```shell
-la app/components
-```
+**NOTE:** Each JS file lives in a module so it can be shared with other modules using [ES6 module](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/) syntax.
 
 CSS stylesheets are placed in the `app/styles` directory and are combined into the `public/app.css` file on build.
 
 ```shell
-la app/styles
+ls -la app/styles
 ```
 
 On each build, the application's files are saved to the `public` directory and served by the HTTP server.
 
 ```shell
-la public
+ls -la public
 ```
 
 Watch the project for changes and launch an HTTP server.
@@ -79,4 +75,3 @@ open http://localhost:8000/
 ## Resources
 
 - [Brunch](http://brunch.io)
-- [React](https://facebook.github.io/react/)
